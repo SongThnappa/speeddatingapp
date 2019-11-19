@@ -4,10 +4,10 @@ module.exports = function (sequelize, DataTypes) {
         test: {
             type: DataTypes.STRING,
             allowNull: false,
-          
 
-    }
-});
+
+        }
+    });
     return Chat;
 
 
