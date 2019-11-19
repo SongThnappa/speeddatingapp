@@ -1,0 +1,29 @@
+{
+  "name": "speeddatingapp",
+  "version": "1.0.0",
+  "description": "blind dating app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SongThnappa/speeddatingapp.git"
+  },
+  "keywords": [
+    "speed",
+    "dating"
+  ],
+  "author": "Jessie Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SongThnappa/speeddatingapp/issues"
+  },
+  "homepage": "https://github.com/SongThnappa/speeddatingapp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.0.0",
+    "sequelize": "^5.21.2"
+  }
+}
