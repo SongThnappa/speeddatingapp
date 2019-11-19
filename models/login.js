@@ -33,5 +33,7 @@ module.exports = function (sequelize, DataTypes) {
       defaultValue: "signedOff"
     }
   });
+
+  
   return Login;
 };
