@@ -8,7 +8,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
-  app.get("/LoginSuccess", function(req, res) {
+  app.get("/LoginSuccessful", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/waitRoom.html"));
   });
 
