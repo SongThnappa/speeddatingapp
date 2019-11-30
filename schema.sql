@@ -1,3 +1,0 @@
-
-DROP DATABASE IF EXISTS speeddate;
-CREATE DATABASE speeddate;
