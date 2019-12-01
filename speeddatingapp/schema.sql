@@ -1,3 +1,3 @@
 
-DROP DATABASE IF EXISTS chessapp;
-CREATE DATABASE chessapp;
+DROP DATABASE IF EXISTS speeddatingapp;
+CREATE DATABASE speeddatingapp;
