@@ -1,22 +1,22 @@
-import React from 'react';
-import { Route, IndexRoute } from 'react-router';
-import App from './components/app';
-import Login from './components/views/login';
-import Room from './components/views/room';
-import Chat from './components/views/chat';
+// import React from 'react';
+// import { Route, Redirect } from 'react-router';
+// import App from './components/App';
+// import Login from './components/views/Login';
+// import Room from './components/views/Room';
+// import Chat from './components/views/Chat';
 
 
 
 
-export default (
-  <Route path='/' component={App}>
-    <IndexRoute component={Login} />
-    <Route path='/Login' component={Login} />
-    <Route path='/waitingRoom/success' component={Room} />
-    <Route path='/game/:gameID' component={Chat} />
-    <Route path='*' component={Home} />
-  </Route>
-);
+// export default (
+//   <Route path='/' component={App}>
+//     <Redirect component={Login} />
+//     <Route path='/Login' component={Login} />
+//     <Route path='/waitingRoom/success' component={Room} />
+//     <Route path='/game/:gameID' component={Chat} />
+//     <Route path='*' component={Login} />
+//   </Route>
+// );
 
 // const path = require("path");
 // const restrict = require("./../config/middleware/isAuthenticated");

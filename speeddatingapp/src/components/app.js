@@ -1,11 +1,22 @@
-import React, {Component} from 'react'
+import React from "react"
+import Login from "./views/Login"
 
-export default class App extends Component{
-  render(){
-  return (
-    <div>
-      {this.props.children}
-    </div>
-  )
-  }
+class App extends React.Component{
+constructor(){
+    super()
+    this.state={}
 }
+
+render(){
+    return(
+        <div>
+            <Login/>
+        </div>
+    )
+}
+
+
+
+}
+
+export default App
