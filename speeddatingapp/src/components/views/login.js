@@ -9,6 +9,7 @@ export default class Login extends Component {
   }
   render() {
     return (
+        <>
         <div id="titleCard">
 
         </div>
@@ -32,8 +33,10 @@ export default class Login extends Component {
           <div class="modal-content">
             <span class="close" style="color: rgb(34, 194, 223)">&times;</span>
       
-      
+      {/* probably should make this a component vv */}
             <div id="newUserEntry">
+
+                
               <div id="form_entry">
                 <p>First Name:</p>
                 <br></br> 
@@ -61,10 +64,10 @@ export default class Login extends Component {
                 <p id="passwordError"></p>
             </div>
         </div>
-      
-           
+      {/* to here ^^ not right now though let me make sure this works*/}
+       </div>    
     </div>
-      
+      </>
     );
   }
 }
