@@ -40,9 +40,9 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-require("./routes/api-routes.js")(app);
-require("./routes/html-routes.js")(app);
-require("./routes/socket");
+require("./routes_old/api-routes")(app);
+require("./routes_old/html-routes.js")(app);
+require("./routes_old/socket");
 // require("./config/passport.js")(passport);
 
 db.sequelize.sync({ force: false }).then(function() {
