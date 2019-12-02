@@ -1,7 +1,12 @@
+ //Global Component Dependencies 
+
 import React from "react";
 
+  //Component Specific Styles
+  import "./styles_ChatRoomComponent.css"
 
-import "./../../stylesheets/global.css";
+  // Local Dependencies
+
 
 export default function Chat() {
     return(<>

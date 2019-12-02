@@ -1,14 +1,21 @@
+//Global Component Dependencies 
 import React from "react"
-import Login from "./views/Login"
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+   
   } from "react-router-dom";
-  
-  import Room from "./views/Room";
-  import Chat from "./views/Chat";
+
+
+  //Component Specific Styles
+  import "./styles_AppComponent.css"
+
+  // Local Dependencies
+  import Login from "./../Login/Login"
+  import Room from "./../Waiting_Room/WaitingRoom";
+  import Chat from "./../Chat_Room/Chat";
+
 
 class App extends React.Component{
 constructor(){

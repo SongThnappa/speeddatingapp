@@ -1,7 +1,7 @@
 const db = require("../models");
 const passport = require("passport");
-require("./../config/passport");
-require("./../config/middleware/isAuthenticated.js");
+require("../config/passport");
+require("../config/middleware/isAuthenticated.js");
 // require("./../config/passport")(passport);
 
 

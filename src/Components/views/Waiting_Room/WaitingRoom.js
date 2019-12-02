@@ -1,8 +1,15 @@
+ //Global Component Dependencies 
+
+
+
 import React from "react";
 import uuid from "react-uuid"
 
-import "./../../stylesheets/global.css";
-import GameCards from "../GameCards";
+  //Component Specific Styles
+  import "./styles_WaitingRoomComponent.css"
+
+  // Local Dependencies
+import GameCards from "./GameCards/GameCards";
 
 
 
@@ -17,7 +24,7 @@ export default function Room () {
       <p className="lead">Select a table below to start...</p>
       <hr className="my-4" />
       
-      <a href="/logout" className="btn btn-primary" id= "logout">Logout</a>
+      <a href="/logout" className="btn btn-primary" id= "logout">Logout</a> 
 
     </div>
       <div id="dateTableHolding">

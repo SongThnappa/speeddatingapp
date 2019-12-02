@@ -1,13 +1,22 @@
+// Global Dependencies
+
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./../stylesheets/global.css";
+
+
+  //Component Specific Styles
+  import "./styles_CenterModalComponent.css"
+
+  // Local Dependencies
 
 
 
 
-export default function MyVerticallyCenteredModal(props) {
+
+export default function CenterModal(props) {
+  
   return (
     <Modal
       {...props}

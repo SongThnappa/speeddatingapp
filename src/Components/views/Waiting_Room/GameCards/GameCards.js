@@ -1,4 +1,11 @@
+//Global Component Dependencies 
+
 import React from 'react'
+
+  //Component Specific Styles
+  import "./styles_GameCardComponent.css"
+
+  // Local Dependencies
 
 export default function GameCards(props) {
     return (
