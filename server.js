@@ -10,13 +10,14 @@ const PORT = process.env.PORT || 8080;
 const bodyparser=require("body-parser");
 const cookieParser = require('cookie-parser')
 const db = require("./models");
+const path = require("path")
 
 
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 // for security this needs to be set
 // https://stackoverflow.com/questions/23413401/what-does-trust-proxy-actually-do-in-express-js-and-do-i-need-to-use-it

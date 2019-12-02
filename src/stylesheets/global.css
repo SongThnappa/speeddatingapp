@@ -1,11 +1,13 @@
 body {
     height: 100%;
     width: 100%;
-    background-image: url("./../assets/background.jpg");
-    background-size: fill;
+    background-color: black;
+    background-image: url("https://media1.tenor.com/images/44311402cd65bc2431d598291fbdda07/tenor.gif");
+    background-size: 125%;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto;
+    /* background-position-y: 130px; */
+    /* margin-top: 300px; */
     font-family: 'Audiowide', cursive;
 
 }
@@ -15,18 +17,21 @@ body {
     height: 400px;
     width: 400px;
     /* logomakr.com/1VXIun */
-    background-image: url("./../assets/mainLOGO.png");
+    background-image: url("./../assets/New/startnew.png");
+    opacity: .3;
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 auto;
 
 }
-
+.model-content{
+    width: 600px;
+}
 #titleCardSmall {
     height: 200px;
     width: auto;
     /* logomakr.com/1VXIun */
-    background-image: url("./../assets/mainLOGO.png");
+    background-image: url("./../assets/New/startnew.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -36,7 +41,7 @@ body {
 .chooseSide{
     height: 100%;
     width: 15%;
-    background-color: rgb(34, 194, 223);
+    background-color: red;
     opacity: .1;
     border-radius: 100px;
     transition: all .5s ease-in-out; 
@@ -198,7 +203,7 @@ body {
     }
 
     25% {
-        background-color: rgb(25, 231, 231);
+        background-color: red;
         color: black;
     }
 
@@ -208,7 +213,7 @@ body {
     }
 
     75% {
-        background-color: rgb(25, 231, 231);
+        background-color: red;
         color: black;
     }
 
@@ -226,7 +231,7 @@ body {
     }
 
     25% {
-        background-color: rgb(25, 231, 231);
+        background-color: red;
         color: black;
     }
 
@@ -236,7 +241,7 @@ body {
     }
 
     75% {
-        background-color: rgb(25, 231, 231);
+        background-color: red;
         color: black;
     }
 
@@ -330,13 +335,13 @@ body {
     float: right;
     font-size: 40px;
     font-weight: bold;
-    color: rgb(34, 194, 223)
+    color: red
 
 }
 
 .close:hover,
 .close:focus {
-    color: rgb(34, 194, 223);
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }
@@ -344,7 +349,7 @@ body {
 #newUserEntry {
     float: left;
     height: 80%;
-    width: 60%;
+    width: 600px;
 
     margin: 0 auto;
     align-content: center;
@@ -390,8 +395,8 @@ body {
 
 #menuCard {
     text-align: center;
-    color: white;
-    background: teal;
+    color: black;
+    background: pink;
     border: 3px solid black;
     opacity: .6;
 }
@@ -405,7 +410,7 @@ body {
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
-    color: rgb(34, 194, 223);
+    color: red;
     overflow-y: auto;
     min-width: 200px;
 
@@ -413,7 +418,7 @@ body {
 
 .chatBoxContainer {
     border-radius: 25px;
-    background-color: rgb(34, 194, 223);
+    background-color: red;
     min-width: 220px;
 
 }
@@ -448,7 +453,7 @@ body {
 .sendmessage:hover {
     background-color: black;
     color: white;
-    border: 3px solid rgb(34, 194, 223);
+    border: 3px solid red;
 }
 
 .chessBlock {
@@ -504,8 +509,27 @@ div.whiteFlip td{
 
 
 
+.card-img-top{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.table{
+    
+    width: 300px;
 
+}
 
+.newGame-img{
+    background-image: url("./../assets/New/startnew.png");
+}
+.Play-img{
+    background-image: url("./../assets/New/waiting.png");
+}
+
+.viewGame-img{
+    background-image: url("./../assets/New/dateInProgress.png");
+}
 
 .whitebg {
     background-color: white;
@@ -606,14 +630,14 @@ div.whiteFlip td{
 }
 
 .file {
-    background-color: rgb(34, 194, 223);
+    background-color: red;
     text-align: center;
     width: 30px;
     opacity: .3;
 }
 
 .rank {
-    background-color: rgb(34, 194, 223);
+    background-color: red;
     text-align: center;
     
     opacity: .2;

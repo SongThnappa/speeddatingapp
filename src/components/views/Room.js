@@ -1,13 +1,19 @@
 import React from "react";
-
+import uuid from "react-uuid"
 
 import "./../../stylesheets/global.css";
-export default function Room() {
+import GameCards from "../GameCards";
+
+
+
+
+export default function Room () {
+   
     return(<>
 
 <div>
     <div id="menuCard">
-      <h1 className="display-4">Game Tables</h1>
+      <h1 className="display-4">Dating Tables</h1>
       <p className="lead">Select a table below to start...</p>
       <hr className="my-4" />
       
@@ -16,39 +22,40 @@ export default function Room() {
     </div>
       <div id="dateTableHolding">
 
-
+                <GameCards 
+                cardKey = "1"
+                cardType = "newGame"
+                imgClass="newGame-img"
+                gameID = {uuid()}
+                path ="/game/"
+                button="NewGame" 
+                />
         
 
 
+                    <GameCards 
+                    cardKey = "2"
+                    cardType = "Sit Down"
+                    imgClass="Play-img"
+                    gameID = {uuid()}
+                     path ="/game/"
+                    button="Sit Down" />
 
-        <div className="card table" >
-          <img src="/assets/waiting.png" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">
-              <p>Player ID: nnwkwndsdsffn</p>
-              <p>Player ID: nnwksdbnd5fn2</p>
-            </h5>
-
-            <a href="#" className="btn btn-primary">Sit Down</a>
-          </div>
-        </div>
-        <div className="card table" >
-          <img src="/assets/dateInProgress.png" className="card-img-top" alt="..." />
-          <div className="card-body">
-              <h5 className="card-title">
-                  <p>Player ID: nnwkwndsdsffn</p>
-                  <p>Player ID: nnwksdbnd5fn2</p>
-                </h5>
-                <a href="#" className="btn btn-primary">View</a>
-
-           
-          </div>
-        </div>
+                    <GameCards 
+                    cardKey = "3"
+                    cardType = "ViewGame"
+                    imgClass= "viewGame-img"
+                    gameID = {uuid()}
+                    path ="/viewOnly/"
+                    button="View Game" />
+  
+    
    
-      </div>
-    </div>
+                    </div>
+                </div>
 
 
-        </>
-    )
+            </>
+     )
+    
 }
