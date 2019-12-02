@@ -330,6 +330,7 @@ body {
     float: right;
     font-size: 40px;
     font-weight: bold;
+    color: rgb(34, 194, 223)
 
 }
 
@@ -431,6 +432,7 @@ body {
 #chatInputDiv {
     width: 50%;
     margin: 0 auto;
+    border: 3px solid black;
 }
 
 .sendmessage {
