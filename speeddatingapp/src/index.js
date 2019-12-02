@@ -9,7 +9,7 @@ import App from "./components/App"
 
 
 
-require('./stylesheets/global.css');
+
 
 
 

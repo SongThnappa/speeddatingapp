@@ -63,8 +63,8 @@ io.on("connection", socket => {
         socket.broadcast.emit("move", move)
     });
     socket.on("chosen", side =>{
-        console.log(move);
-        socket.broadcast.emit("move", move)
+        console.log(side);
+        socket.broadcast.emit("move", side)
     });
 
 
