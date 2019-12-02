@@ -9,7 +9,7 @@ module.exports = function (app) {
 
   app.post("/register", function (req, res) {
     const {
-      email2,
+      email,
       first,
       last,
       password
@@ -17,7 +17,7 @@ module.exports = function (app) {
 
     db.Login.findOne({
       where: {
-        email: email2
+        email: email
       }
     }).then((user) => {
       if (user) {
@@ -25,7 +25,7 @@ module.exports = function (app) {
         return
       } else {
         db.Login.create({
-            email: email2,
+            email: email,
             firstName: first,
             lastName: last,
             password: password,

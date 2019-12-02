@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   import "./styles_CenterModalComponent.css"
 
   // Local Dependencies
-import RegisterForm from "./RegisterForm/RegisterFrom"
+import RegisterForm from "./RegisterForm/RegisterForm"
 
 
 
