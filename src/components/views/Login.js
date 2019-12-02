@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
-import Room from "./Room";
-import Chat from "./Chat";
 
 import "./../../stylesheets/global.css";
 
@@ -17,10 +9,8 @@ export default function Login() {
   // }
 
     return (
-        <Router>
-        <div id="titleCard">
-
-        </div>
+     <>
+        <div id="titleCard"></div>
       
         <div id="loginBox">
             <form action="/login" method="POST" id="loginBoxForm">
@@ -75,20 +65,6 @@ export default function Login() {
     
        </div>    
     </div>
-    <Switch>
-          <Route exact path="/">
-            <Login />
-          </Route>
-          <Route path="/Login">
-            <Login />
-          </Route>
-          <Route path="/waitingRoom/success">
-            <Room />
-          </Route>
-          <Route path="/game/:gameID">
-            <Chat />
-          </Route>
-        </Switch>
-        </Router>
+   </>
     );
   }
