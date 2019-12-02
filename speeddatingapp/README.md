@@ -1,1 +1,0 @@
-simple app using react.
