@@ -2,6 +2,7 @@ const db = require("../models");
 const passport = require("passport");
 require("../config/passport");
 require("../config/middleware/isAuthenticated.js");
+
 // require("./../config/passport")(passport);
 
 
@@ -13,8 +14,8 @@ module.exports = function (app) {
       first,
       last,
       password
-    } = req.body;
-
+    } = req.body.user;
+console.log(req.body.user)
     db.Login.findOne({
       where: {
         email: email
